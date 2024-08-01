@@ -11,9 +11,10 @@ public class App {
         massOrder();
         multiplyNumbers();
         diagMass();
-        System.out.println(Arrays.toString(refund(2,40)));
+        System.out.println(Arrays.toString(refund(2, 40)));
         searchMinMax();
     }
+
     //1. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1,
     //0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
     public static void onezero() {
@@ -34,6 +35,7 @@ public class App {
         System.out.println(Arrays.toString(arr2));
 
     }
+
     //Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его
     //значениями 1 2 3 4 5 6 7 8 … 100;
     public static void massOrder() {
@@ -43,6 +45,7 @@ public class App {
         }
         System.out.println(Arrays.toString(arr));
     }
+
     //Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6
     //умножить на 2;
     public static void multiplyNumbers() {
@@ -54,6 +57,7 @@ public class App {
         }
         System.out.println(Arrays.toString(arr));
     }
+
     //Создать квадратный двумерный целочисленный массив (количество строк и столбцов
     //одинаковое), и с помощью цикла(-ов) заполнить его диагональные элементы единицами
     //(можно только одну из диагоналей, если обе сложно). Определить элементы одной из
@@ -71,6 +75,7 @@ public class App {
             System.out.println();
         }
     }
+
     //Написать метод, принимающий на вход два аргумента: len и initialValue, и возвращающий
     //одномерный массив типа int длиной len, каждая ячейка которого равна initialValue;
     public static int[] refund(int len, int initialValue) {
@@ -81,16 +86,17 @@ public class App {
         }
         return arr;
     }
+
     //* Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
-    public static void searchMinMax(){
+    public static void searchMinMax() {
         int[] arr = {1, 5, 3, 2, 11, -4, 5, 2, 4, 8, 9, 1};
         int min = arr[0];
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max ){
+            if (arr[i] > max) {
                 max = arr[i];
             }
-            if (arr[i] < min ){
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }
