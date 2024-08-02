@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class App {
     public static void main(String[] args) {  // это первая гед и чего сделать?
-        onezero();
+        replaceOneToZero();
         massOrder();
         multiplyNumbers();
         diagMass();
@@ -17,22 +17,22 @@ public class App {
 
     //1. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1,
     //0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
-    public static void onezero() {
+    public static void replaceOneToZero() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-        int[] arr2 = arr;
+        //int[] arr = arr;
         {
             System.out.println(Arrays.toString(arr));
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr2[i] == 0) {
-                arr2[i] = 1;
+            if (arr[i] == 0) {
+                arr[i] = 1;
             } else {
-                if (arr2[i] == 1) {
-                    arr2[i] = 0;
+                if (arr[i] == 1) {
+                    arr[i] = 0;
                 }
             }
         }
-        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(arr));
 
     }
 
