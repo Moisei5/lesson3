@@ -19,7 +19,6 @@ public class App {
     //0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
     public static void replaceOneToZero() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-        //int[] arr = arr;
         {
             System.out.println(Arrays.toString(arr));
         }
